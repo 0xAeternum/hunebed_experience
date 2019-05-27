@@ -1,6 +1,5 @@
 import React from 'react';
 import { StyleSheet, Text, View, TouchableOpacity, Button } from 'react-native';
-import RNSimpleCompass from 'react-native-simple-compass';
 import * as firebase from "firebase";
 import 'firebase/firestore';
 
@@ -25,12 +24,12 @@ export default class Coords extends React.Component {
         alert(error)
       })
     
-      const degree_update_rate = 3; // Number of degrees changed before the callback is triggered
-      RNSimpleCompass.start(degree_update_rate, (degree) => {
-        console.log('You are facing', degree)
-        this.setState({ trueHeading: degree })
-        RNSimpleCompass.stop()
-      });
+      // const degree_update_rate = 3; // Number of degrees changed before the callback is triggered
+      // RNSimpleCompass.start(degree_update_rate, (degree) => {
+      //   console.log('You are facing', degree)
+      //   this.setState({ trueHeading: degree })
+      //   RNSimpleCompass.stop()
+      // });
     // Location.getCurrentPositionAsync().then(position => {
     //   const latitude = position.coords.latitude
     //   const longitude = position.coords.longitude
