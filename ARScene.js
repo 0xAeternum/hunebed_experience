@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, TouchableOpacity, Button } from 'react-native';
+import { StyleSheet, Text, View, Button } from 'react-native';
 import {
   ViroVRSceneNavigator,
   ViroARSceneNavigator
@@ -18,7 +18,7 @@ var UNSET = "UNSET";
 var VR_NAVIGATOR_TYPE = "VR";
 var AR_NAVIGATOR_TYPE = "AR";
 
-var defaultNavigatorType = UNSET;
+var defaultNavigatorType = AR_NAVIGATOR_TYPE;
 
 
 export default class ARScene extends React.Component {

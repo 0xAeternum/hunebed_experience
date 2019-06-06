@@ -17,9 +17,6 @@
     "ios": "9.3"
   },
   "dependencies": {
-    "GVRSDK": [
-      "1.120.0"
-    ],
     "GVRAudioSDK": [
       "1.120.0"
     ],

@@ -5,9 +5,9 @@ import React, { Component } from 'react';
 import {StyleSheet} from 'react-native';
 
 import {
-  ViroScene,
+  ViroARScene,
   ViroText,
-  Viro360Image,
+  ViroImage,
 } from 'react-viro';
 
 export default class HelloWorldScene extends Component {
@@ -20,10 +20,10 @@ export default class HelloWorldScene extends Component {
 
   render() {
     return (
-      <ViroScene>
-        <Viro360Image source={require('./res/guadalupe_360.jpg')} />
+      <ViroARScene>
+        <ViroImage source={require('./res/guadalupe_360.jpg')} />
         <ViroText text="Hello World!" width={2} height={2} position={[0, 0, -2]} style={styles.helloWorldTextStyle} />
-      </ViroScene>
+      </ViroARScene>
     );
   }
 

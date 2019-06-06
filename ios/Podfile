@@ -1,5 +1,24 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.3'
+
 target 'hunebed_experience_v2' do
+  # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
   pod 'ViroReact', :path => '../node_modules/react-viro/ios/'
   pod 'ViroKit', :path => '../node_modules/react-viro/ios/dist/ViroRenderer/'
+  pod 'GTMSessionFetcher/Core', '1.1.6'
+  pod 'GoogleToolboxForMac/Logger', '2.1.0'
+  pod 'GoogleToolboxForMac/Defines', '2.1.0'
+  # Pods for hunebed_experience_v2
+
+  target 'hunebed_experience_v2-tvOSTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'hunebed_experience_v2Tests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
 end
